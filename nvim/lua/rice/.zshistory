@@ -1,0 +1,300 @@
+ls
+cd .config
+l
+ls
+cd nvim
+ls
+lua
+rice
+ls
+ls
+ls
+vi packer.lua
+cp packer.lua lazy.lua
+vi lazy.lua
+vi lazy.lua
+ls
+vi init.lua
+ls
+vi set.lua
+cd ..
+ls
+cd..
+ls
+ls
+cd ..
+ls
+vi init.lua
+cd lua
+ls
+vi rice
+ls
+cd rice
+ls
+vi packer.lua
+vi lazy.lua
+ls
+vi init.lua
+vi packer.lua
+vi init.lua
+vi init.lua
+vi init.lua
+vi init.lua
+vi lazy.lua
+vi lazy.lua
+vi lazy.lua
+rm lazy.lua
+cp packer.lua lazy.lua
+vi lazy.lua
+ls
+ls
+cd .config/nvim
+ls
+ls
+cd lua
+lks
+cd lu
+ls
+cd rice
+ls
+cd ..
+ls
+cd ..
+ls
+rm lazy-lock.json
+cd plugin
+ls
+cd ..
+sl
+ls
+cd ..
+ls
+cd nc
+cd nvim
+ls
+cd lua
+ls
+cd rice
+ls
+vi lazy.lua
+vi packer.lua
+vi init.lua
+vi init.lua
+vi init.lua
+vi init.lua
+cd ..
+ls
+cd ..
+ls
+vi lazy-lock.json
+rm lazy-lock.json
+ls
+cd lua
+ls
+cd rice
+ls
+vi init.lua
+vi init.lua
+vi init.lua
+vi init.lua
+vi init.lua
+ls
+cd ~
+ls
+cd .config/nvim
+ls
+cd after
+ls
+cd plugin
+ls
+vi refactoring.lua
+ls
+cd ..
+ls
+cd. .
+ls
+cd ..
+ls
+vi init.lua
+cd plugin
+ls
+cd ..
+ls
+cd lua
+ls
+cd rice
+ls
+vi packer.lua
+ls
+vi init.lua
+vi packer.lua
+vi lazy.lua
+vi lazy.lua
+vi init.lua
+vi lazy.lua
+vi packer.lua
+vi lazy.lua
+vi lazy.lua
+vi packer.lua
+vi lazy.lua
+vi lazy.lua
+ls
+mv packer.lua ~
+vi lazy.lua
+vi lazy.lua
+vi lazy.lua
+vi lazy.lua
+vi lazy.lua
+vi lazy.lua
+ls
+ls
+vi lazy.lua
+vi set.lua
+vi init.lua
+ls
+cd ~
+ls
+cd .config/nvim
+ls
+cd after
+ls
+cd plugin
+ls
+vi colors.lua
+cd ..
+sl
+cd ..
+cd lua
+ls
+cd rice
+lsz
+ls
+ls
+vi lazy.lua
+vi lazy.lua
+nano lazy.lua
+v lazy.lua
+cd ~
+ls
+vi packer.lua
+cat packer.lua
+ls
+cd .config/nvim
+ls
+vi lazy-lock.json
+cat lazy-lock.json
+cd lua
+ls
+cd rice
+ls
+vi lazy.lua
+ls
+vi lazy.lua
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd nvim
+cd after
+ls
+cd plugin
+ls
+vi telescope.lua l
+cat telescope.lua
+cd ..
+ls
+cd ..
+ls
+cd lua
+ls
+cd rice
+ls
+vi lazy.lua
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd after
+ls
+ls
+cd plugin
+cat harpoon.lua
+cd ..
+ls
+cd ..
+ls
+cd lua
+ls
+cd rice
+ls
+vi lazy.lua
+vi lazy.lua
+vi lazy.lua
+cat lazy.lua
+v lazy.lua
+vi lazy.lua
+vi lazy.lua
+vi lazy.lua
+vi lazy.lua
+vi init.lua
+vi lazy.lua
+ls
+vi init.lua
+cd //
+cd .config/nvim
+cd ~
+cd .config/nvim
+ls
+cd plugin
+ls
+cd ..
+ls
+cd lua
+ls
+cd rice
+ls
+cd ..
+ls
+cd ..
+ls
+cat init.lua
+cd lua
+ls
+cd rice
+ls
+cat init.lua
+ls
+cd ..
+ls
+cd ..
+ls
+vi init.lua
+vi init.lua
+cd lua
+ls
+cd rice
+vi init.lua
+vi init.lua
+ls
+cd ..
+ls
+ls
+cd rice
+vi lazy.lua
+cd ..
+ls
+cd ..
+ls
+ls
+pwd
+cd lua
+ls
+vi rice
+ls
+cd rice
+vi init.lua
+vi lazy.lua
+vi lazy.lua
