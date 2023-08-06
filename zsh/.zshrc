@@ -9,7 +9,7 @@ unsetopt BEEP
 # History in cache directory:
 HISTSIZE=100000
 SAVEHIST=100000
-HISTFILE=".zshistory"
+HISTFILE="$HOME/.zshistory"
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -54,9 +54,6 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
-bindkey -s '^o' '^ulfcd\n'
-
-bindkey -s '^a' '^ubc -lq\n'
 
 bindkey -s '^f' '^ucd "$(dirname "$(fzf)")"\n'
 
@@ -75,6 +72,16 @@ alias vi='nvim'
 alias vim='nvim'
 alias cnf='cd ~/.config/'
 alias vcnf='cd ~/.config/nvim/'
+alias ls='ls --color'
 
-source ~/.config/zsh/plugins/F-Sy-H/F-Sy-H.plugin.zsh
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/snap/bin
+
+#source ~/.config/zsh/plugins/F-Sy-H/F-Sy-H.plugin.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
