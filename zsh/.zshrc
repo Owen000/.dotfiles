@@ -56,6 +56,7 @@ lfcd () {
 }
 
 bindkey -s '^f' '^ucd "$(dirname "$(fzf)")"\n'
+bindkey -s '^s' '/home/dev/sshhelper.sh\n'
 
 bindkey '^[[P' delete-char
 
@@ -76,6 +77,7 @@ alias ls='ls --color'
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/snap/bin
+export KEYPAIRS=/home/dev/.ssh/keypairs/
 
 #source ~/.config/zsh/plugins/F-Sy-H/F-Sy-H.plugin.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -85,3 +87,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach -t default || tmux new -s default
+fi
+
+export PATH=$PATH:/home/dev/.local/bin
+export PATH="$HOME/nvim-linux64/bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH=$PATH:$(go env GOPATH)/bin
