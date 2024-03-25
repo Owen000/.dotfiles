@@ -67,7 +67,7 @@ bindkey -M vicmd '^[[P' vi-delete-char
 bindkey -M vicmd '^e' edit-command-line
 bindkey -M visual '^[[P' vi-delete
 
-#My Cool Aliase's
+#My Cool Aliases
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
@@ -75,11 +75,13 @@ alias cnf='cd ~/.config/'
 alias vcnf='cd ~/.config/nvim/'
 alias ls='ls --color'
 
-export PATH=$PATH:/usr/local/go/bin
+export PATH="/mnt/c/Windows:$PATH"
 export PATH=$PATH:/snap/bin
 export KEYPAIRS=/home/dev/.ssh/keypairs/
 
-#source ~/.config/zsh/plugins/F-Sy-H/F-Sy-H.plugin.zsh
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#ebdbb2,bg:#282828,hl:#458588 --color=fg+:#ebdbb2,bg+:#3c3836,gutter:-1,hl+:#83a598 --color=info:#afaf87,prompt:#fabd2f,pointer:#83a598 --color=marker:#b8bb26,spinner:#b16286,header:#83a598'
+
+source ~/.config/zsh/plugins/F-Sy-H/F-Sy-H.plugin.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -95,3 +97,5 @@ export PATH=$PATH:/home/dev/.local/bin
 export PATH="$HOME/nvim-linux64/bin:$PATH"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH=$PATH:$(go env GOPATH)/bin
+
+eval "$(zoxide init --cmd cd zsh)"
