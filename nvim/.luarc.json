@@ -1,0 +1,8 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "gruvbox",
+        "sections"
+    ],
+    "runtime.version": "Lua 5.4"
+}
