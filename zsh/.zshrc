@@ -55,8 +55,12 @@ lfcd () {
     fi
 }
 
-bindkey -s '^f' '^ucd "$(dirname "$(fzf)")"\n'
-bindkey -s '^s' '/home/dev/sshhelper.sh\n'
+fzmv-widget() {
+   ~/fzmv.sh
+}
+
+zle -N fzmv-widget
+bindkey '^f' fzmv-widget
 
 bindkey '^[[P' delete-char
 
@@ -68,18 +72,32 @@ bindkey -M vicmd '^e' edit-command-line
 bindkey -M visual '^[[P' vi-delete
 
 #My Cool Aliases
+alias cat='batcat --paging=never'
+alias gcfw='~/.config/git/worktreesetup.sh'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias cnf='cd ~/.config/'
 alias vcnf='cd ~/.config/nvim/'
 alias ls='ls --color'
+alias getall='kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -n'
+
+alias clip='/mnt/c/Windows/System32/clip.exe'
+
+function gitnewbranch() {
+  git checkout -b $1 && git push --set-upstream origin $1
+}
+alias gnb='gitnewbranch'
+
+export EDITOR='nvim'
+
+export BAT_THEME="ansi"
 
 export PATH="/mnt/c/Windows:$PATH"
 export PATH=$PATH:/snap/bin
 export KEYPAIRS=/home/dev/.ssh/keypairs/
 
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#ebdbb2,bg:#282828,hl:#458588 --color=fg+:#ebdbb2,bg+:#3c3836,gutter:-1,hl+:#83a598 --color=info:#afaf87,prompt:#fabd2f,pointer:#83a598 --color=marker:#b8bb26,spinner:#b16286,header:#83a598'
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#ebdbb2,hl:#458588 --color=fg+:#ebdbb2,bg+:#3c3836,gutter:-1,hl+:#83a598 --color=info:#afaf87,prompt:#fabd2f,pointer:#83a598 --color=marker:#b8bb26,spinner:#b16286,header:#83a598'
 
 source ~/.config/zsh/plugins/F-Sy-H/F-Sy-H.plugin.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -99,3 +117,9 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH=$PATH:$(go env GOPATH)/bin
 
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+setopt HIST_IGNORE_SPACE
+
+. "$HOME/.cargo/env"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
