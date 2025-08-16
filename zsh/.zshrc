@@ -121,5 +121,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 setopt HIST_IGNORE_SPACE
 
+source /home/dev/keys.zsh
+
 . "$HOME/.cargo/env"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[[ -s "/home/dev/.gvm/scripts/gvm" ]] && source "/home/dev/.gvm/scripts/gvm"
+export PATH="$HOME/go/bin:$PATH"
