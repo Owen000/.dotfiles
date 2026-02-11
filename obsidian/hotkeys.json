@@ -1,0 +1,19 @@
+{
+  "workspace:close": [],
+  "leader-hotkeys-obsidian:register-modal": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Key255"
+    }
+  ],
+  "obsidian-key-sequence-shortcut:reload-kssrc": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Key255"
+    }
+  ]
+}
